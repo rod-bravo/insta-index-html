@@ -1,0 +1,39 @@
+# instagram_static_gallery_generator.py
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FAFAFA;
+      text-align: center;
+    }
+    .insta-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .instagram-media {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Instagram Gallery</h1>
+  <div class="insta-container">
+    <!-- Paste your Instagram embed blocks here -->
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CvNq6JJsjzv/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:0 auto;"></blockquote>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CwO2c-kP9LR/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:0 auto;"></blockquote>
+  </div>
+  <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
+"""
+# Save it to an HTML file
+with open("index.html", "w", encoding="utf-8") as file:
+    file.write(html_content)
+print(":white_check_mark: index.html has been created successfully.")
